@@ -3,22 +3,15 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <h1>Produtos</h1>
-  </header>
+  <v-app>
+    <v-app-bar color="primary">
+      <v-app-bar-title>Produtos</v-app-bar-title>
+    </v-app-bar>
 
-  <main>
-    <RouterView />
-  </main>
+    <v-main>
+      <v-container>
+        <RouterView />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
-
-<style scoped>
-header {
-  padding: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-main {
-  padding: 1rem;
-}
-</style>
